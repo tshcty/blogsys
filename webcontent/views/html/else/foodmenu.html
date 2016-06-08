@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>美食菜单</title>
+	<link href="../../../BlogSystem01/web/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../../../BlogSystem01/web/static/common/common.css">
+   <script src="../../../BlogSystem01/web/static/bootstrap/js/jquery-1.11.3.min.js"></script>
+   <script src="../../../BlogSystem01/web/static/bootstrap/js/bootstrap.min.js"></script>
+   <script src="../../../BlogSystem01/web/static/bootstrap/js/holder.min.js"></script>
+</head>
+
+<body>
+<!-- header部分 -->
+	<header class="myheader">
+		<div class="container">
+			<!-- <%--logo--%> -->
+			<div class="header-logo">
+                <a href="" class=""><img class="" data-src="holder.js/100x100"/></a>
+            </div>
+			<!-- <%--search--%> -->
+            <div class="header-search">
+				<form class="search" role="search">
+			        <input type="text" class="form-control" placeholder="Search" style="width:400px;"/>
+			        <button type="submit" class="btn search-btn">搜索</button>
+				</form>
+  			</div>
+  			<!--<%--login regist--%>-->
+  			<div class="header-login">
+             		<span class="login-regist btn"><a href="#">登录</a></span>
+        			<span class="login-regist btn"><a href="#">注册</a></span>
+	        </div>
+		</div>
+	</header>
+<!-- 导航部分start -->
+  	<nav class="navbar navbar-default mynav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-for-nav">
+                	<ul class="nav navbar-nav">
+						<li class=" myli"><a href="../index.html">首页</a></li>
+	        			<li class="myli"><a href="menu.html">菜谱大全</a></li>
+	        			<li class="myli"><a href="top_person.html">美食达人<span class="sr-only">(current)</span></a></li>
+	        			<li class="active myli"><a href="foodmenu.html">美食菜单</a></li>
+	        			<li class="myli"><a href="topic.html">话题</a></li>
+	        		</ul>
+                </div>
+                
+            </div>
+        </div>
+    </nav> 
+<!-- 导航部分end -->
+<!--美食菜单主内容  start-->
+<!--head  start-->
+	<div class="bbtitles">
+		 “菜单是你的一桌饭”
+	</div>
+<!--head  end-->
+<!--content  start-->
+     <div class="cdlist_main container">
+		 <span class="loading">加载中...
+		 </span>
+		 <div class="cdlist_w cdlist_w_current">
+			 <div class="cdlist_item_style1 clearfix">
+				 <h3><a href="">我的菜单</a>
+				 </h3>
+					 <span class="cpcount">
+						 <em>10</em>"篇菜谱"
+					 </span>
+				 <div class="info">
+					 <dl>
+						 <dd>
+							 <strong class="tag">time</strong>
+						 </dd>
+					 </dl>
+					 <a href="" class="author">
+						 <img data-src="holder.js/40x40" alt=""/>
+						 <strong>shiwo</strong>
+					 </a>
+				 </div>
+				 <ul class="cplist">
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+
+				 </ul>
+			 </div>
+		 </div>
+		 <div class="cdlist_w cdlist_w_current">
+			 <div class="cdlist_item_style1 clearfix">
+				 <h3><a href="">我的菜单</a>
+				 </h3>
+					 <span class="cpcount">
+						 <em>10</em>"篇菜谱"
+					 </span>
+				 <div class="info">
+					 <dl>
+						 <dd>
+							 <strong class="tag">time</strong>
+						 </dd>
+					 </dl>
+					 <a href="" class="author">
+						 <img data-src="holder.js/40x40" alt=""/>
+						 <strong>shiwo</strong>
+					 </a>
+				 </div>
+				 <ul class="cplist">
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+					 <li><a href="">
+						 <img data-src="holder.js/150x160" alt="">
+						 <h4>gdfggdf</h4>
+					 </a></li>
+
+				 </ul>
+			 </div>
+		 </div>
+	 </div>
+<!--content  end-->
+<!--美食菜单主内容  end-->
+	
+</body>
+<script src="static/common/common.js"></script>
+</html>
+<script type="text/javascript">
+	$('.cdlist_item_style1 .cplist li').bind({
+		mouseover:function(){
+//		alert('asad');
+//			alert($(this).size());
+			$(this).find('h4').css("display","block");
+		},
+		mouseleave:function(){
+			$(this).find('h4').css("display","none");
+		}
+	});
+</script>

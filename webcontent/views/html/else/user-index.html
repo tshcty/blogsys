@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户</title>
+	<link rel="stylesheet" href="../../../BlogSystem01/web/static/css/common.css">
+	<script src="../../../BlogSystem01/web/static/js/jquery-1.11.3.min.js"></script>
+	<script src="../../../BlogSystem01/web/static/js/holder.min.js"></script>
+	<script src="../../../BlogSystem01/web/static/js/jquery.scrollToTop.min.js"></script>
+	<style type="text/css">
+
+	</style>
+</head>
+<!--header部分  start-->
+	<header class="myheader">
+		<div class="container">
+			<!-- <%--logo--%> -->
+			<div class="header-logo">
+                <a href="" class=""><img class="" data-src="holder.js/100x100"/></a>
+            </div>
+			<!-- <%--search--%> -->
+            <div class="header-search">
+				<form class="search" role="search">
+			        <input type="text" class="form-control" placeholder="Search" style="width:400px;"/>
+			        <button type="submit" class="btn search-btn">搜索</button>
+				</form>
+  			</div>
+  			<!--<%--login regist--%>-->
+  			<div class="header-login">
+             		<span class="login-regist btn"><a href="#">登录</a></span>
+        			<span class="login-regist btn"><a href="#">注册</a></span>
+	        </div>
+		</div>
+	</header>
+<!--header部分  end-->
+<!-- 导航部分 start -->
+  	<nav class="mynav navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-for-nav">
+                	<ul class="nav navbar-nav">
+						<li class="myli"><a href="../index.html">首页</a></li>
+	        			<li class="myli"><a href="menu.html">菜谱大全<span class="sr-only">(current)</span></a></li>
+	        			<li class="myli"><a href="top_person.html">美食达人</a></li>
+	        			<li class="myli"><a href="foodmenu.html">美食菜单</a></li>
+	        			<li class="myli"><a href="topic.html">话题</a></li>
+	        		</ul>
+                </div>
+                
+            </div>
+        </div>
+    </nav> 
+<!-- 导航部分 end -->
+<!-- 切换卡部分start -->
+	<div class="xuanxka container">
+		<div class="sy-head">
+			<h2>我的美食空间</h2>
+		</div>
+		<div class="tabbtn" id="fadetab">
+			<div class="btn current"><a href="">个人信息</a></div>
+			<div class="btn"><a href="">我的菜谱</a></div>
+			<div class="btn"><a href="">我的收藏</a></div>
+			<div class="btn"><a href="">我的话题</a></div>
+		</div><!--tabbtn end-->
+		<div class="tabcon" id="fadecon">
+			<div class="sublist">
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+			</div><!--tabcon end-->
+			<div class="sublist">
+				<span class="btn">01</span>
+				<span class="btn">02</span>
+				<span class="btn">03</span>
+				<br/>
+				<span class="btn">04</span>
+				<span class="btn">05</span>
+				<span class="btn">06</span>
+				<br/>
+				<span class="btn">07</span>
+				<span class="btn">08</span>
+				<span class="btn">09</span>
+				<br/>
+				<span class="btn">10</span>
+				<span class="btn">11</span>
+				<span class="btn">12</span>
+			</div><!--tabcon end-->
+			<div class="sublist">
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+			</div><!--tabcon end-->
+			<div class="sublist">
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<br/>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+				<span class="btn">加长</span>
+			</div><!--tabcon end-->
+		</div><!--tabcon end-->
+	</div>
+<!-- 切换卡部分end-->
+</body>
+<script src="../../../BlogSystem01/web/static/common/common.js"></script>
+<script src="../../../BlogSystem01/web/static/plugin/xuanxka/jquery.tabso_yeso.js"></script>
+</html>
+<script type="text/javascript">
+	//淡隐淡现选项卡切换
+	$("#fadetab").tabso({
+		cntSelect:"#fadecon",
+		tabEvent:"mouseover",
+		tabStyle:"fade"
+	});
+</script>

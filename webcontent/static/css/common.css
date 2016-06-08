@@ -1,0 +1,499 @@
+/*-- 所有页面公共部分  start--*/
+/*-- 总体公共部分  start--*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #ff8581;
+    /*background:#000 url('../imgs/16.jpg') no-repeat 40px 0px;*/
+    /*opacity: 0.9;*/
+    /*height: 1500px;*/
+}
+.container{
+    margin:0 auto;
+    width:1000px;
+    /*height:100%;*/
+    /*background: #f1cd59;*/
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+
+}
+.fl{
+    float:left;
+    /*display: inline-block;*/
+}
+.inb{
+    display: inline-block;
+}
+.fr{
+    float:right;
+    /*display: inline-block;*/
+}
+.clearfix {
+    zoom:1;
+}
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+    /*position: relative;*/
+}
+.cmargin{
+    margin: 0 auto;
+}
+/*-- 总体公共部分  end--*/
+/*------------------------------------总头部------------*/
+/*-- header部分  start--*/
+#header-wrapper{
+    /*background: #ffffff;*/
+    /*height: 330px;*/
+    /*margin-bottom: 40px;*/
+}
+/*-- head部分  start--*/
+#header-wrapper .head{
+    height:90px;
+    /*background: #000;*/
+}
+#header-wrapper .logo{
+    height: 40px;
+    margin-top:25px;
+    /*margin-right: 100px;*/
+}
+#header-wrapper .fj-info{
+    /*display: none;*/
+    /*background: #f1cd59;*/
+    height: 50px;
+    width: 50px;
+    margin-top:20px;
+    margin-right: 5px;
+    /*padding: 5px;*/
+}
+#header-wrapper .fj-info .myimg{
+    width:50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 25px;
+    /*margin-right:100px;*/
+}
+#header-wrapper .login-regist-s{
+    margin-top:15px;
+    /*margin-right: 80px;*/
+}
+#header-wrapper .login-regist-s li{
+    list-style-type: none;
+    /*display: inline-block;*/
+}
+#header-wrapper .login-regist-s a{
+    display: block;
+    height: 30px;
+    line-height:30px;
+    padding: 0 30px;
+    -webkit-transition:background 0.5s linear;
+    -moz-transition:background 0.51s linear;
+    -ms-transition:background 0.5s linear;
+    -o-transition:background 0.5s linear;
+    transition:background 0.5s linear;
+}
+#header-wrapper .login-regist-s a:hover{
+    background-color: #ec6e65;
+    color: #25292c;
+}
+/*-- head部分  end--*/
+/*-- nav部分  start--*/
+#header-wrapper .nav{
+    background: #25292c;
+    /*position: fixed;*/
+    /*border-top: greenyellow solid 2px;*/
+}
+#header-wrapper .nav li{
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 10px;
+    /*border-right: solid 1px #2f89c5;*/
+    -webkit-transition:background 0.5s linear;
+    -moz-transition:background 0.5s linear;
+    -ms-transition:background 0.5s linear;
+    -o-transition:background 0.5s linear;
+    transition:background 0.5s linear;
+}
+#header-wrapper .nav li.on,#header-wrapper .nav li:hover{
+    background-color: #373d42;
+}
+#header-wrapper .search{
+    margin-top: 15px;
+    height: 45px;
+    line-height:45px;
+    text-align: right;
+    margin-right: 30px;
+    /*width: 240px;*/
+}
+#header-wrapper .search input[type="text"] {
+    font-family: "微软雅黑";
+    background: #dddddd;
+    border: solid 1px #ccc;
+    height: 30px;
+    line-height: 25px;
+    font-size: 17px;
+    padding-left: 10px;
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -10px;
+    border-radius:4px;
+}
+#header-wrapper .search input[type="submit"] {
+    cursor: pointer;
+    font-family: "微软雅黑";
+    background-color: #383e43;
+    color: #c2c2c2;
+    border: solid 1px #383e43;
+    height: 32px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    padding: 0 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#header-wrapper .search input[type="submit"]:hover{
+    color:#fff;
+}
+/*-- nav部分  end--*/
+/*-- header部分  end--*/
+/*-- choose部分  start--*/
+#user-wrapper{
+    margin-bottom: 40px;
+}
+#user-wrapper #choose{
+
+}
+#user-wrapper #choose .b-show{
+    height:30px;
+    background: #fff;
+    line-height:30px;
+}
+#user-wrapper #choose .b-show .img{
+    margin-right: 20px;
+    /*padding:5px;*/
+    cursor: pointer;
+    color: #e97575;
+}
+#user-wrapper #choose .xuanxka{
+    background: #040404;
+    height: 40px;
+    /*border-bottom:#c16565 solid 1px ;*/
+    /*display: none;*/
+}
+#user-wrapper #choose .xuanxka li{
+    display: inline-block;
+    color: #2aabd2;
+    padding: 10px 20px;
+}
+#user-wrapper #choose .xuanxka li.active{
+    /*background: #ff8581;*/
+    border-top: #c16565 solid 1px;
+    border-left: #c16565 solid 1px;
+    border-right: #c16565 solid 1px;
+    border-bottom: #fff solid 1px;
+    background: #fff;
+}
+#user-wrapper #choose .xuanxka li.active a{
+    color: #c26161;
+}
+#user-wrapper #choose .select{
+    display: block;
+}
+/*-- choose部分  end--*/
+/*-- footer部分  start--*/
+#footer-wrapper{
+    background-color: #272b2d;
+    margin-top: 20px;
+    padding: 40px 0;
+    width:100%;
+    /*min-width: 1260px;*/
+    /*position: absolute;*/
+}
+#footer-wrapper li{
+    display: inline-block;
+    vertical-align: top;
+    border-right:solid 1px #fff;
+    padding-right: 18px;
+    margin-left: 18px;
+}
+#footer-wrapper li:last-child{
+    border: 0;
+}
+#footer-wrapper footer{
+    text-align: center;
+}
+#footer-wrapper a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#footer-wrapper p{
+    color: #ffffff;
+    margin-top: 10px;
+}
+/*-- footer部分  end--*/
+/*回顶部start*/
+#toTop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-image: url('../imgs/totop.gif');
+    /*background-repeat: no-repeat;*/
+    /*background: red;*/
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+#toTop:hover {
+    opacity: 1;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+/*回顶部结束*/
+/*-- 所有页面公共部分  end--*/
+/*----------------------------------------------------*/
+/*-- 各个页面body部分  start--*/
+/*-- body部分  start--*/
+#body-wrapper{
+    /*height: 1000px;*/
+    /*margin-top: 40px;*/
+}
+/*------------------------------------首页-*/
+/*-- 左侧部分  start--*/
+#body-wrapper .side-l{
+    width:740px;
+    /*background: #ffffff;*/
+    margin-right: 10px;
+}
+#body-wrapper .side-l .wz{
+    margin-bottom: 40px;
+    background: #ffffff;
+}
+#body-wrapper .side-l .wz .title-bg{
+    height:40px;
+    line-height: 40px;
+    border-left: #ec6e65 solid 5px;
+    padding-left: 10px;
+    border-bottom:#EBEBEB solid 2px;
+}
+#body-wrapper .side-l .wz .title-bg a{
+    color:crimson ;
+}
+#body-wrapper .side-l .wz section{
+    /*height: 230px;*/
+    /*margin-left: 15px;*/
+    padding-left: 15px;
+    border-bottom: #EBEBEB inset 1px;
+}
+#body-wrapper .side-l .wz .title a{
+    width: 300px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 30px;
+    line-height:30px;
+    font-size: 15px;
+}
+#body-wrapper .side-l .wz .content{
+    width: 500px;
+    margin-left: 15px;
+    height:145px;
+    color: #767072;
+    font-size: 15px;
+    word-wrap: break-word;
+
+    /*background: #000;*/
+}
+#body-wrapper .side-l .wz .content p{
+    display: block;
+    max-height: 85px;
+    overflow: hidden;
+}
+#body-wrapper .side-l .wz .btn{
+    display: block;
+    width: 85px;
+    height: 20px;
+    padding:10px;
+    margin-top:20px;
+    margin-left: 390px;
+    background: #fd8b62;
+}
+#body-wrapper .side-l .wz .info{
+    margin:10px 0px;
+
+}
+#body-wrapper .side-l .wz .info span{
+    display: inline-block;
+    margin-right: 10px;
+    color: #767072;
+    font-size: 15px;
+
+}
+/*-- 左侧部分  end--*/
+/*-- 右侧部分  start--*/
+#body-wrapper .side-r{
+    width:250px;
+    background: #ddaf83;
+}
+#body-wrapper .side-r li{
+    /*list-style-type: none;*/
+}
+#body-wrapper section#zigongsi{
+
+}
+#body-wrapper section#zigongsi li{
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-top: 10px;
+}
+#body-wrapper section#zigongsi li a{
+    color: #444;
+    text-decoration: none;
+}
+#body-wrapper section#zigongsi li h4{
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+}
+#body-wrapper .zgsjj{
+    -webkit-transition:padding 0.5s linear;
+    -moz-transition:padding 0.5s linear;
+    -ms-transition:padding 0.5s linear;
+    -o-transition:padding 0.5s linear;
+    transition:padding 0.5s linear;
+}
+#body-wrapper .zgsjj:hover{
+    border: solid 1px #ec6e65;
+    padding: 10px 5px;
+}
+#body-wrapper .zgsjj a{
+    display: inline-block;
+    vertical-align: top;
+}
+#body-wrapper .zgsjj a:first-child{
+    text-decoration: none;
+    width: 80px;
+}
+#body-wrapper .zgsjj a:last-child{
+    width: 150px;
+    font-size: 12px;
+    height: 55px;
+    overflow: hidden;
+}
+/*-- 右侧部分  end--*/
+/*----------------------------------登录注册页面-*/
+/*-- login-regist  start--*/
+.login-regist{
+    width: 400px;
+    /*height:300px;*/
+    margin: 55px auto;
+    background: rgba(255, 255, 255, 0.74);
+    padding-bottom: 10px;
+}
+.login-regist .head{
+     height:50px;
+     line-height: 50px;
+     text-align: center;
+     margin-bottom: 25px;
+     cursor:pointer;
+     font-size: 20px;
+     background: rgba(6, 6, 6, 0.8);
+ }
+.login-regist .head div{
+    display: inline-block;
+    /*width:150px;*/
+    /*background: #94fff4;*/
+    color:#fff;
+    padding: 0 77px;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+.login-regist .head div.active{
+    /*border-top: #dddddd solid 1px;*/
+    /*border-left: #c16565 solid 1px;*/
+    /*border-right: #c16565 solid 1px;*/
+    /*border-bottom: #fff solid 1px;*/
+    background: #040404;
+    color:red;
+
+}
+.login-regist .head div:hover{
+    color: #ec4606;
+}
+.login-regist .select-content{
+    padding: 0 10px;
+}
+.login-regist .content:first-child{
+    display: block;
+    /*background: #000;*/
+}
+.login-regist .content{
+    margin-left: 65px;
+    display:none;
+}
+.login-regist .content input[type="text"],input[type="password"]{
+    display: block;
+    width: 250px;
+    height: 35px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    /*padding-right:5px;*/
+}
+.login-regist .content button{
+    width:252px;
+    height: 40px;
+    border: 0px;
+    background: #09b7ec;
+    margin:10px 0;
+    font:18px/40px  "宋体" ;
+}
+.login-regist .content .forget-pwd a{
+    color: #040404;
+}
+.login-regist .content .forget-pwd a:hover{
+    color: #ec1702;
+}
+.login-regist .login-regist-info{
+    line-height: 40px;
+    color:#fff;
+    word-wrap:break-word;
+    background: #ec1702;
+    padding-left:5px;
+    margin: 10px 0;
+    display:none;
+
+}
+/*-- login-regist  end--*/
+/*------------------------------博文大全页面*/
+#body-wrapper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-- body部分  end--*/
+/*-- 各个页面body部分  end--*/
